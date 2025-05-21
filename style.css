@@ -1,0 +1,524 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: white;
+  color: #333;
+}
+
+/* Styling untuk navbar */
+.navbar {
+  background-color: #ffffff; 
+  display: flex;             
+  justify-content: space-between; 
+  align-items: center;       
+  padding: 16px 32px;        
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Styling logo */
+.navbar-logo {
+  color: #000000;            
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Styling menu navbar */
+.navbar-menu {
+  display: flex;
+  gap: 20px;                 
+}
+
+.navbar-menu a {
+  color: #000000;            
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: #555555;            
+}
+
+
+/* Hero Section */
+.group-448 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.rectangle-11 {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.rectangle-40 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.c-9-multimedia {
+  padding-top: 200px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.solusi-profesional-untuk-live-streaming-visual-event-kami-menyediakan-layanan-live-streaming-penyewaan-led-screen-dokumentasi-live-cam-dan-sewa-tv-semua-dalam-satu-paket-multimedia-terpercaya {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #eee;
+  padding: 0 20px;
+}
+
+/* Button */
+.button {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.view-our-work {
+  background-color: #779eea;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.view-our-work:hover {
+  background-color: #5c85d6;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: white;
+  gap: 40px;
+  margin-top: 50px; /* sebelumnya -100px, sekarang diberi jarak positif */
+}
+
+.frame-39, .frame-37, .frame-392, .frame-372 {
+  display: flex;
+  align-items: flex-start;
+  width: 300px;
+}
+
+.group-429,
+.group-434,
+.group-439,
+.group-433 {
+  width: 50px;
+  margin-right: 15px;
+}
+
+.frame-38, .frame-36 {
+  display: flex;
+  flex-direction: column;
+}
+
+.live-streaming,
+.rental-video-drone,
+.live-video-cam,
+.television-rental {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.menyewakan-live-streaming,
+.menyewakan-renatal-video,
+.menyewakan-vidio-cam,
+.menyewakan-televisi {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Container untuk dua kolom teks */
+.frame-150 {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+/* Teks deskripsi kolom kiri */
+.c-9-multimedia-merupakan-penyedia-layanan-profesional-di-bidang-multimedia-yang-meliputi-live-streaming-penyewaan-video-tron-live-video-cam-dan-penyewaan-televisi-didukung-oleh-tim-ahli-dan-peralatan-modern-kami-berkomitmen-memberikan-solusi-visual-yang-optimal-untuk-berbagai-kebutuhan-acara-baik-secara-langsung-maupun-daring,
+.kami-memahami-pentingnya-visual-yang-kuat-dalam-setiap-acara-dengan-dukungan-teknologi-mutakhir-dan-tim-yang-kompeten-c-9-multimedia-siap-membantu-mewujudkan-tayangan-yang-memukau-baik-untuk-kebutuhan-event-seminar-konser-maupun-siaran-daring-lainnya-setiap-detail-kami-tangani-dengan-profesionalisme-tinggi-agar-pesan-anda-tersampaikan-dengan-maksimal {
+  color: #666666;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  flex: 1 1 45%;
+  min-width: 250px;
+}
+
+/* Wrapper info card */
+.group-446 {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Latar belakang rectangle - opsional */
+.rectangle-30 {
+  width: 100%;
+  height: auto;
+  background: #e0e0e0; /* ganti dengan warna/gradient yang sesuai */
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.container {
+  display: flex;
+  height: auto;
+}
+
+/* KIRI */
+.left {
+  width: 35%;
+  background-color: #5577F0;
+  color: white;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+.feature {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.icon {
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.text h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.text p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+
+/* KANAN */
+.right {
+  width: 65%;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.about h2 {
+  padding-left: 15px;
+  margin-bottom: 5px;
+}
+
+.underline {
+  width: 40px;
+  height: 3px;
+  background-color: #5577F0;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.desc p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+/* Footer */
+.consultation {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.consultation button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.block-2 {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.group-438 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-6 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.rectangle-40 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi transparan gelap */
+  z-index: -1;
+}
+
+.we-ve-been-building-for-over-10-years {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.live-now-reach-more {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.button .about-us {
+  background-color: #779eea;
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button .about-us:hover {
+  background-color: #5c85d6;
+}
+.container-portofolio {
+  padding: 40px 20px;
+  background-color: #f9f9f9; 
+}
+
+.container-portofolio .text {
+  text-align: center; 
+  margin-bottom: 30px;
+}
+
+.container-portofolio .text h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.container-portofolio .text p {
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto; 
+  line-height: 1.6;
+}
+
+/* Gambar dalam flex container */
+.wrapper-img {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap; /
+}
+
+.wrapper-img div {
+  flex: 1 1 30%; 
+  max-width: 300px;
+}
+
+.wrapper-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.contact-us-container {
+  display: flex;
+  min-height: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Kiri: Formulir */
+.contact-left {
+  background-color: #5a6dde; 
+  color: white;
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-left h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.underline {
+  width: 40px;
+  height: 4px;
+  background-color: #000;
+  margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: white;
+  color: #5a6dde;
+}
+
+/* Kanan: Info Kontak */
+.contact-right {
+  background-color: #fff;
+  flex: 1;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin-bottom: 20px; 
+}
+
+.top-row .contact-left h2 {
+  margin: 0;
+}
+
+.contact-right {
+  background-color: #fff;
+  color: #333;  
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  border-top: 90px solid #222; 
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top-row .contact-left h2 {
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 24px; 
+  height: 24px;
+  filter: brightness(0) invert(1); 
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.info-item img {
+  width: 20px;
+  height: 20px;
+}
+
+.info-item p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
