@@ -126,7 +126,8 @@ body {
   align-items: center;
   width: 250px;
   background-color: rgba(0, 0, 0, 0.75); /ganti warna kotak disini/
-color: white;
+  color: white;
+
 
   padding: 20px;
   border-radius: 12px;
@@ -377,6 +378,11 @@ color: white;
   cursor: pointer;
   transition: background 0.3s ease;
 }
+.about-us {
+  color: #ffffff; /* atau warna lain sesuai desain */
+  text-decoration: none; /* hilangkan underline */
+}
+
 
 .button .about-us:hover {
   background-color: #5c85d6;
@@ -685,7 +691,6 @@ ul li {
   margin-bottom: 20px;
 }
 
-/* Garis gradasi merah di sisi kiri */
 .plan::before {
   content: '';
   position: absolute;
@@ -698,7 +703,7 @@ ul li {
 }
 
 
-  /*landing portofolio */
+  /*landing service */
 .hero {
   position: relative;
   background: url('2e683912-b277-45ff-b63a-cb2e88111b3b.jpg') no-repeat center center/cover;
@@ -757,4 +762,157 @@ ul li {
 .presented-by {
   font-size: 0.9rem;
   opacity: 0.8;
+}
+
+/*tulisan portofolio*/
+.portfolio-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.portfolio-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #cc0000;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/*porto new*/
+.portfolio-section {
+  background-color: #ffffff;
+  color: #fff;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Lebar minimum diperbesar */
+  gap: 40px;
+}
+
+.portfolio-item {
+  background-color: #1a1a1a;
+  padding: 30px; /* Lebih lega */
+  border-radius: 12px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  min-height: 420px; /* Tinggi kotak ditambah */
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 220px; /* Tambahkan tinggi tetap */
+  object-fit: cover; /* Agar gambar ter-crop rapi */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.portfolio-item h3 {
+  margin: 15px 0 8px;
+  font-size: 22px; /* Lebih besar */
+  color: #fff;
+}
+
+.portfolio-item a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #ff3c3c;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.portfolio-item a span {
+  margin-left: 6px;
+}
+
+/*css untuk porto landing*/
+:root {
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  --bg-color: #f6f6f4;
+  --text-color: #222;
+  --muted-color: #888;
+  --card-gap: 2.5rem;
+  --card-padding: 1.5rem;
+  --card-radius: 8px;
+  --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  --card-img-margin: 1rem;
+  --card-img-border: 1px solid #eee;
+  --card-font-size: 1.2rem;
+  --card-meta-size: 0.85rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--card-gap);
+  margin-top: 4rem;   
+  margin-bottom: 4rem; 
+}
+
+.card {
+  background: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--card-shadow);
+  border-radius: var(--card-radius);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: var(--card-img-margin);
+  border-bottom: var(--card-img-border);
+}
+
+.card-content {
+  padding: var(--card-padding);
+}
+
+.card-meta {
+  font-size: var(--card-meta-size);
+  color: var(--muted-color);
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-family: var(--font-serif);
+  font-size: var(--card-font-size);
+  line-height: 1.4;
 }
